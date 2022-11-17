@@ -4,18 +4,18 @@ import java.io.*;
  
 class minOperation {
     // Function to print minimum operation required to make
-    // all elements of an array equal
+    // все элементы массива равны
     static void printMinOp(int arr[])
     {
         int arraySum, smallest, arr_size = arr.length;
         arraySum = 0;
         smallest = arr[0];
         for (int i = 0; i < arr_size; i++) {
-            // If current element is smaller than update smallest
+            // Если  текущий элемент меньше, чем самый маленький
             if (arr[i] < smallest)
                 smallest = arr[i];
  
-            // find array sum
+            // Найти сумму массива
             arraySum += arr[i];
         }
  
