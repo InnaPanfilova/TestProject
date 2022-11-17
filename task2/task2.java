@@ -4,18 +4,18 @@ class GFG {
     // Function to find the NGE
     static void printNGE(int[] A, int n)
     {
-        // Formation of circular array
+        // Формирование кольцевого массива
         int[] arr = new int[2 * n];
-        // Append the given array element twice
-        for (int i = 0; i < 2 * n; i++)
+        // Добавить данный элемент массива дважды
+     for (int i = 0; i < 2 * n; i++)
             arr[i] = A[i % n];
         int next;
-        // Iterate for all the elements of the array
+        //Выполнение итерации для всех элементов массива
         for (int i = 0; i < n; i++) {
             // Initialise NGE as -1
             next = -1;
             for (int j = i + 1; j < 2 * n; j++) {
-                // Checking for next greater element
+                // Проверка наличия следующего большего элемента
                 if (arr[i] < arr[j]) {
                     next = arr[j];
                     break;
@@ -29,7 +29,7 @@ class GFG {
     // Driver Code
     public static void main(String args[])
     {
-        // Given array arr[]
+        // Заданный массив arr[]
         int[] arr = { 1, 2, 1 };
         int N = arr.length;
         // Function call
