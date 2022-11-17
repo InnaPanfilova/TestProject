@@ -1,14 +1,14 @@
-// Java program to check if a point lies
-// inside a circle or not
+// Java программа для проверки лежит ли точка
+// внутри круга или нет
  
 class GFG {
  
     static boolean isInside(int circle_x, int circle_y,
                                  int rad, int x, int y)
     {
-        // Compare radius of circle with
-        // distance of its center from
-        // given point
+        // Сравнить радиус круга с
+        // расстоянием его центра от
+        // заданной точки
         if ((x - circle_x) * (x - circle_x) +
             (y - circle_y)  (y - circle_y) <= rad  rad)
             return true;
