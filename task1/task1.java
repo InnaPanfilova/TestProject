@@ -2,7 +2,6 @@
 // Java program to find min operation
 import java.io.*;
  
-
 class minOperation {
     // Function to print minimum operation required to make
     // all elements of an array equal
